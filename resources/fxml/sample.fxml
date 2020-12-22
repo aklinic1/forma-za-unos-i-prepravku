@@ -19,16 +19,6 @@
     <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Button fx:id="dodajBttn" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Dodaj" GridPane.columnIndex="1" GridPane.rowIndex="5">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="20.0" top="5.0" />
-         </GridPane.margin>
-      </Button>
-      <Button fx:id="krajBttn" mnemonicParsing="false" onAction="#bttnClick" prefHeight="25.0" prefWidth="70.0" text="Kraj" GridPane.columnIndex="2" GridPane.rowIndex="5">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
-         </GridPane.margin>
-      </Button>
       <TextField fx:id="imeTxt" GridPane.columnIndex="2">
          <GridPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -54,15 +44,27 @@
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </GridPane.margin>
       </TextField>
-      <TextField fx:id="lozinkaTxt" GridPane.columnIndex="2" GridPane.rowIndex="4">
-         <GridPane.margin>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </GridPane.margin>
-      </TextField>
-      <ListView prefHeight="200.0" prefWidth="200.0" GridPane.rowSpan="5">
+      <ListView fx:id="listKorisnici" prefHeight="200.0" prefWidth="200.0" GridPane.rowSpan="5">
          <GridPane.margin>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </GridPane.margin>
       </ListView>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5">
+         <buttons>
+            <Button fx:id="dodajBttn" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" onAction="#actionDodaj" text="Dodaj">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+            <Button fx:id="krajBttn" mnemonicParsing="false" onAction="#bttnClick" prefHeight="25.0" prefWidth="70.0" text="Kraj" />
+         </buttons>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin>
+      </ButtonBar>
+      <PasswordField fx:id="lozinkaTxt" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </PasswordField>
    </children>
 </GridPane>
