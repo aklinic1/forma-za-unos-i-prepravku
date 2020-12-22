@@ -63,4 +63,6 @@ public class Controller {
         model.dodajKorisnika(new Korisnik());
         model.setTrenutniKorisnik(model.getKorisnici().get(model.getKorisnici().size() - 1));
     }
+
+
 }
