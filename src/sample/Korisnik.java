@@ -2,7 +2,7 @@ package sample;
 
 import javafx.beans.property.SimpleStringProperty;
 
-public class Korisnik {
+public class  Korisnik {
     private SimpleStringProperty ime, prezime, email, korisnickoIme, sifra;
 
     public Korisnik() {
